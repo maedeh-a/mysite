@@ -1,0 +1,423 @@
+@font-face {
+    font-family: "iransansblack";
+    src: url("../fonts/ttf/IRANSansWeb_Black.ttf");
+    src: url("../fonts/woff/IRANSansWeb_Black.woff") format("woff"), url("../fonts/eot/IRANSansWeb_Black.eot") format("opentype");
+}
+
+@font-face {
+    font-family: "iransansbold";
+    src: url("../fonts/ttf/IRANSansWeb_Bold.ttf");
+    src: url("../fonts/woff/IRANSansWeb_Bold.woff") format("woff"), url("../fonts/eot/IRANSansWeb_Bold.eot") format("opentype");
+}
+
+@font-face {
+    font-family: "iransans_medium";
+    src: url("../fonts/ttf/IRANSans\(FaNum\)_Medium.ttf");
+    src: url("../fonts/woff/IRANSansWeb_Medium.woff") format("woff"), url("../fonts/eot/IRANSansWeb_Medium.eot") format("opentype");
+}
+
+@font-face {
+    font-family: "iransans_light";
+    src: url("../fonts/ttf/IRANSans\(FaNum\)_Light.ttf");
+    src: url("../fonts/woff/IRANSansWeb_Light.woff") format("woff"), url("../fonts/eot/IRANSansWeb_Light.eot") format("opentype");
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "iransans_medium";
+    text-align: right;
+}
+p,
+span,
+a {
+    font-family: "iransans_light";
+    text-align: right;
+}
+/* Navbar */
+.navbar{
+    box-shadow: 0.1rem 0.0rem 0.5rem rgba(29, 28, 28, 0.808);
+
+}
+
+.navbar-light.navbar-nav .nav-link {
+    color: #000 !important;
+}
+.nav-item{
+    padding: 0px 0px 0px 50px;
+}
+
+.navbar-collapse .nav-link {
+    position: relative;
+}
+.navbar-collapse .nav-link:hover{
+    color: rgb(27, 27, 27);
+
+}
+.navbar-collapse .nav-link::after{
+    content: " ";
+    position: absolute;
+    top: -15%;
+    right: 0;
+    height: 2.3px;
+    width: 0;
+    background-color: #dda408;
+    transition: all 0.3s;
+    box-shadow: 0 0 7px #886404;
+}
+.navbar-collapse .nav-item:hover .nav-link::after {
+    width: 100%;
+    transition: all 0.4s;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: #dda408 !important;
+}
+.navbar.navbar-light.bg-light{
+    background-color: #f8f9fad1 !important;
+} 
+/* End Navbar */
+/* Home */
+.landing{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+  
+}
+.home-wrap{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+}
+.home-inner{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/root/landing.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+.caption{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    color:#fff;
+    
+    
+
+}
+.caption h1{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem rgb(19, 19, 19);
+    font-family: "iransansbold";
+    
+}
+.caption h2{
+    text-align: center;
+    padding-bottom: 1.6rem ;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgb(19, 19, 19);
+    
+}
+.caption .btn-start{
+    padding: 0.5rem 1rem;
+}
+/* End Home */
+/* About Qdesing */
+.area{
+    margin: 0 auto ;
+    padding: 8rem 2rem 5rem ;
+}
+
+   
+.area p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.area .btn-about{
+    padding: 0.5rem 1rem;
+    margin: 1rem ;
+    background-color: #dda408;
+    color: #ffff;
+    font-size: 1rem;
+    border-width: 0.1 rem;
+    border-color: #dda408;
+}
+/*  End About Qdesing */
+/* Services */
+div.jumbotron{
+    margin-bottom: 0;
+    padding: 2rem 0 3.5rem;
+    border-radius: 0;
+}
+h2.title{
+    font-size: 2rem;
+    font-weight:600;
+    text-align: center;
+
+}
+.under-line{
+    width: 35rem;
+    height: 0.1rem;
+    background-color:#f9ba48 ;
+    margin: 1rem auto 2rem;
+}
+.Services h3.my-title{
+    font-size: 1.4rem;
+    padding: 0.8rem 0 2rem;
+    text-align: center;
+    font-weight:800;
+    color: #252424
+    
+}
+.Services p{
+    font-size:1rem
+}
+.Services svg.icon path{
+    color:#b38506 ;
+    fill: currentColor;
+    padding-bottom: 2rem;
+}
+
+/* End Services */
+/* product */
+.group-background{
+    position: relative;
+}
+.fixed-wrap{
+    clip: rect(0,auto,auto,0);
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;   
+}
+.fixed{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url(../img/root/back2.jpg);
+    background-size: cover;
+    background-position:center center;
+}
+.group-background .dark{
+    background-color: #4c4b4bd6;
+    padding: 9rem 2rem;
+}
+.product h3{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight:400;
+    color:#f9ba48;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.8rem rgb(37, 37, 37);
+}
+.product p{
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgb(255, 254, 254);
+    text-shadow: 0.1rem 0.1rem 0.5rem rgb(37, 37, 37);
+    padding:1rem 0.5rem 0;
+    font-family: "iransans_light";
+}
+.group-background h2.title{
+    color:#ffffff;
+    padding: 2rem 0 0;
+    text-shadow: 0.1rem 0.1rem 0.8rem rgb(37, 37, 37);
+    
+}
+/* End product */
+/* site */
+#site img{
+    width: 100%;
+    padding-top: 4.5rem;
+}
+#accordion{
+    padding-top: 6.5rem;
+}
+
+#accordion .site-text p{
+    text-align: justify;
+    font-size:0.9rem;
+    font-family:"iransans_light";
+    padding:1rem 0.5rem 1.5rem;
+    
+
+}
+
+#accordion h3{
+    padding:1.1rem 0.5rem ;
+    border: 0.1em solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#accordion svg{
+    transition: 0.2s;
+}
+#accordion h3[aria-expanded="true"] svg{
+    transition: 0.2s;
+    transform: rotate(180deg);
+}
+#accordion h3:hover{
+    background-color: #f9ba48;
+}
+
+#accordion .ui-icon{
+    display: none;
+}
+.ui-accordion-header.ui-corner-top.ui-state-default.ui-accordion-icons.ui-accordion-header-active.ui-state-active{
+    background-color: #f9ba48;
+}
+.site-text.ui-accordion-content.ui-corner-bottom.ui-helper-reset.ui-widget-content.ui-accordion-content-active{
+    height:100px;
+}
+.jumbotron h2.site-title{
+    font-size: 2rem;
+    padding: 4rem 0 0rem;
+} 
+
+
+
+/* End site */
+/* contact us */
+
+.area .line-title{
+    width: 35rem;
+    height: 0.1rem;
+    background-color: grey;
+    margin-top: 3rem;
+
+}
+.line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.area .line h2.contact-title{
+    font-size: 1.7rem;
+    text-align: center;
+    padding-bottom:1rem;
+    
+}
+
+/* End contact us */
+
+
+/* footer */
+footer{
+    padding: 4rem auto;
+    background-color: #575d5f;
+    background-image: url(../img/root/footer-pattern.png);
+}
+footer p{
+    font-size: 1rem;
+    padding:2rem 0  3rem;
+    color: #000;
+}
+    
+
+
+footer svg path{
+    color: #000;
+    fill: currentColor;
+    transition: 0.2s;
+}
+footer .copy-right p{
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+footer span {
+    font-size: 2rem;
+    color: #cc9900;
+}
+footer h4{
+    font-size: 1.2rem;
+    padding: 1.1rem 0;
+  
+    color: #000;
+    text-align: center;
+}
+footer a {
+color:#cc9900
+}
+footer a:hover{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+footer svg path:hover{
+    color:#cc9900;
+    transition: 0.2s;
+}
+
+/* End footer */
+/* btn-fab */
+.btn-group-fab{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: auto;
+}
+.btn-group-fab .btn{
+    border-radius: 50%;
+    position: absolute;
+    color:#ffff;
+    bottom: 0;
+}
+.btn-group-fab .btn-main{
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    line-height: 2.5;
+}
+.btn-group-fab .btn-sub{
+    width: 50%;
+    bottom: 0;
+    z-index: 1;
+    margin-right: 15px;
+
+}
+.btn-group-fab.active .btn-sub:nth-child(1){
+    bottom: 50px;
+}
+.btn-group-fab.active .btn-sub:nth-child(2){
+    bottom: 100px;
+}
+
+.btn-group-fab.active .btn-sub:nth-child(3){
+    bottom: 150px;
+}
+.btn-group-fab.active .btn-sub:nth-child(4){
+    bottom: 200px;
+}
+/* End btn-fab */
+
+@media only screen and (max-width: 576px){
+    html, body {
+        overflow-x: hidden;
+    }
+}
+
